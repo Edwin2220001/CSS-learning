@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Restoran</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .bckgrod{
+            background-image:linear-gradient(rgba(21,32,48,93%),rgba(21,32,48,93%)), url(bg-hero.jpg);
+            height: 100vh;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+            padding: 12px 17px;
+        }
+        .logo{
+            display: inline-flex;
+            align-items: center;
+            padding: 0%;
+            gap: 6px;
+            color: orange;
+            /* flex-direction: row; */
+        }
+        .nav_links{
+            display: flex;
+            gap: 12px;
+        }
+        ul{
+            display: flex;
+            gap: 12px;
+            list-style-type: none;
+            text-decoration: none;
+            padding: 9px;
+        }
+        li a{
+            color: white;
+            list-style-type: none;
+            text-decoration: none;
+            transition: color 2s;
+        }
+        li a:hover{
+            color: orange;
+        }
+
+        button{
+            padding: 9px;
+            background-color: orange;
+            border-style: none;
+            border-radius: 7px;
+        }
+        .Bodcont{
+            display: flex;
+            /* margin: auto; */
+           
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+        .Bcont{
+            color: white;
+            display: block;
+            width: 30%;
+            
+         
+            animation-name: mmt;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        @keyframes mmt {
+            0%{
+                translate: -515px;
+
+            }
+            100%{
+                translate: 0px;
+            }
+        }
+        .Bcont h1{
+            font-size: 3rem;
+        }
+        .hero{
+            align-items: center;
+            width: 300px;
+            height: 300px;
+        }
+        .hero img{
+            width: 125%;
+            height: 125%;
+            animation-name: rott;
+            position: relative;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+         
+        }
+        @keyframes rott{
+            0%{
+                transform: rotate(0deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="bckgrod">
+        
+        <nav>
+            <div class="logo">
+                <i class="fa fa-utensils me-3"></i>
+                <h1>Restoran</h1>
+            </div>
+            
+            <div class="nav_links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <button>Book a Table</button>
+            </div>
+        </nav>
+        <div class="Bodcont">    
+            <div class="Bcont">
+                <h1>Enjoy our delicious meal</h1>
+                <p>Lsjdgb chsvgsd dshdhsf fdsjdgb chsvgsd dshdhsf dsjdgb dsjdgb chsvgsd fdsjdgb fdsjdgb chsvgsd dshdhsf dsjdgb chsvgsd</p><br>
+                <button>Book a Table</button>
+            </div>
+            <div class="hero">
+                <img src="hero.png" alt="hero">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
